@@ -1,1 +1,1 @@
-# C-_GUI_lab
+# C++ GUI lab
