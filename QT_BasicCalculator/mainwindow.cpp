@@ -30,10 +30,15 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->Button_subtract, SIGNAL(released()), this, SLOT(operatorPressed()));
     connect(ui->Button_multiply, SIGNAL(released()), this, SLOT(operatorPressed()));
     connect(ui->Button_divide, SIGNAL(released()), this, SLOT(operatorPressed()));
+    connect(ui->Button_sqrt, SIGNAL(released()), this, SLOT(operatorPressed()));
+    connect(ui->Button_pow, SIGNAL(released()), this, SLOT(operatorPressed()));
+    connect(ui->Button_fact, SIGNAL(released()), this, SLOT(operatorPressed()));
 
     // Connect clear and equal buttons
     connect(ui->Button_clear, SIGNAL(released()), this, SLOT(on_Button_clear_clicked()));
     connect(ui->Button_equal, SIGNAL(released()), this, SLOT(on_Button_equal_clicked()));
+
+     connect(ui->Button_del, SIGNAL(released()), this, SLOT(on_Button_del_clicked()));   // Del button
 }
 
 MainWindow::~MainWindow()
@@ -46,35 +51,88 @@ double MainWindow::calculateExpression(const QString &expression)
     QStringList tokens = expression.split(' ', Qt::SkipEmptyParts);
     qDebug() << "Tokens:" << tokens; // Debug output
 
-    // Check for a valid expression structure
-    // Allow cases for single numbers (like "12")
-    if (tokens.size() < 1 || (tokens.size() == 1 && tokens[0].toDouble() == 0 && tokens[0] != "0")) {
-        throw std::invalid_argument("Invalid expression");
+    if (tokens.isEmpty()) {
+        throw std::invalid_argument("Empty expression");
     }
 
+    // First Pass: Handle Factorial (!), Square Root (√), and Exponentiation (^)
+    for (int i = 0; i < tokens.size(); ++i) {
+        QString op = tokens[i];
+
+        // Handle square root (√)
+        if (op == "√") {
+            if (i + 1 >= tokens.size()) {
+                throw std::invalid_argument("Invalid expression after √");
+            }
+            double num = tokens[i + 1].toDouble();
+            double sqrtResult = calculation_Function::sqrt(num);
+            tokens[i] = QString::number(sqrtResult); // Replace √ and number with the result
+            tokens.removeAt(i + 1); // Remove the number token after √
+        }
+
+        // Handle factorial (!)
+        if (op == "!") {
+            if (i == 0) {
+                throw std::invalid_argument("Invalid factorial usage");
+            }
+            int num = static_cast<int>(tokens[i - 1].toDouble());
+            double factResult = calculation_Function::factorial(num);
+            tokens[i - 1] = QString::number(factResult); // Replace number with factorial result
+            tokens.removeAt(i); // Remove '!'
+            --i; // Adjust index
+        }
+
+        // Handle exponentiation (^)
+        if (op == "^") {
+            if (i + 1 >= tokens.size()) {
+                throw std::invalid_argument("Invalid expression after ^");
+            }
+            double base = tokens[i - 1].toDouble();
+            double exp = tokens[i + 1].toDouble();
+            double powResult = calculation_Function::power(base, exp);
+            tokens[i - 1] = QString::number(powResult); // Replace base with power result
+            tokens.removeAt(i); // Remove '^'
+            tokens.removeAt(i); // Remove exponent number
+            --i; // Adjust index
+        }
+    }
+
+    // Second Pass: Handle Multiplication (*) and Division (/)
+    for (int i = 1; i < tokens.size(); i += 2) {
+        QString op = tokens[i];
+
+        if (op == "*" || op == "x" || op == "/") {
+            double left = tokens[i - 1].toDouble();
+            double right = tokens[i + 1].toDouble();
+            double result;
+
+            if (op == "*" || op == "x") {
+                result = calculation_Function::multiply(left, right);
+            } else if (op == "/") {
+                if (right == 0) {
+                    throw std::invalid_argument("Division by zero");
+                }
+                result = calculation_Function::divide(left, right);
+            }
+
+            tokens[i - 1] = QString::number(result); // Replace left operand with result
+            tokens.removeAt(i); // Remove operator
+            tokens.removeAt(i); // Remove right operand
+            i -= 2; // Adjust index to continue
+        }
+    }
+
+    // Final Pass: Handle Addition (+) and Subtraction (-)
     double result = tokens[0].toDouble(); // Start with the first number
 
     for (int i = 1; i < tokens.size(); i += 2) {
         QString op = tokens[i];
         double nextNum = tokens[i + 1].toDouble();
 
-        // Print token values for debugging
-        qDebug() << "Operator:" << op << ", NextNum:" << nextNum;
-
-        // Perform the operation based on the operator
         if (op == "+") {
             result = calculation_Function::add(result, nextNum);
         } else if (op == "-") {
             result = calculation_Function::subtract(result, nextNum);
-        } else if (op == "*") {
-            result = calculation_Function::multiply(result, nextNum);
-        } else if (op == "/") {
-            if (nextNum == 0) {
-                throw std::invalid_argument("Division by zero");
-            }
-            result = calculation_Function::divide(result, nextNum);
-        } else if (op == "^") {
-            result = calculation_Function::power(result, nextNum);
         } else {
             throw std::invalid_argument("Unknown operator");
         }
@@ -82,6 +140,8 @@ double MainWindow::calculateExpression(const QString &expression)
 
     return result;
 }
+
+
 
 
 
@@ -135,4 +195,13 @@ void MainWindow::on_Button_equal_clicked()
     }
 
     currentInput = QString::number(result); // Store the result as new input for next operations
+}
+
+void MainWindow::on_Button_del_clicked()
+{
+    if (!currentInput.isEmpty()) {
+        currentInput.chop(1);
+        currentInput.append(" ");        // Remove the last character from the string
+    }
+    ui->textBrowser->setText(currentInput); // Update the display
 }

@@ -22,6 +22,7 @@ private slots:
     void on_Button_clear_clicked();   // To clear the input
     void on_Button_equal_clicked();   // To calculate and display result
     void operatorPressed();               // When an operator (+, -, *, /, etc.) is pressed
+    void on_Button_del_clicked();
 
 private:
     Ui::MainWindow *ui;
