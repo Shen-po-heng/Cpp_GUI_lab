@@ -39,5 +39,5 @@ The basic calculator is designed to perform arithmetic operations such as additi
    - Output: `"Invalid expression: Expected a number after operator at position 2"`
 
 ### Result: (video, and some description)
-<video controls src="CalculatorDemo.mp4" title="Title"></video>
+[![Basic Calculator Demo](https://img.youtube.com/vi/3Sm66-Ruk4w/0.jpg)](https://www.youtube.com/watch?v=3Sm66-Ruk4w)
 ## Timer
