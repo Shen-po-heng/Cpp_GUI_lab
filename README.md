@@ -1,5 +1,6 @@
 # C++ GUI lab
 ![Static Badge](https://img.shields.io/badge/Qt%20Version-QT6-green)
+
 This repository is to practice GUI implementation of c++, so maybe each folder is not a big project, just a small scale project for practice. If you think it's helpful for you, you can just download them and welcome to leave any comments to suggest (or criticize) or ask me questions. I will answer you when I am available. 
 
 ## Project 1 : Basic Calculator
