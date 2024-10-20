@@ -38,6 +38,6 @@ The basic calculator is designed to perform arithmetic operations such as additi
    - Input: `"5 +"`
    - Output: `"Invalid expression: Expected a number after operator at position 2"`
 
-### Result: (video, and some description)
+### Demo
 [![Basic Calculator Demo](https://img.youtube.com/vi/3Sm66-Ruk4w/0.jpg)](https://www.youtube.com/watch?v=3Sm66-Ruk4w)
 ## Timer
