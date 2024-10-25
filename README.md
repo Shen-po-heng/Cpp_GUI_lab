@@ -1,7 +1,10 @@
 # C++ GUI lab
-This repository is to practice GUI implementation of c++, so maybe each folder, maybe it's not big project, but just a small scale project for practice. If you think it's helpful for you, you can just download them and welcome to leave any comments to suggest (or criticize) or ask me questions. I will answer you when I am available. 
+![Static Badge](https://img.shields.io/badge/Qt%20Version-QT6-green)
 
-## Project 1: Basic Calculator
+This repository is to practice GUI implementation of c++, so maybe each folder is not a big project, just a small scale project for practice. If you think it's helpful for you, you can just download them and welcome to leave any comments to suggest (or criticize) or ask me questions. I will answer you when I am available. 
+
+## Project 1 : Basic Calculator
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen) 
 ### Design Idea
 The basic calculator is designed to perform arithmetic operations such as addition, subtraction, multiplication, and division, as well as advanced mathematical functions like square roots and factorials. It takes user input in a simple string format and evaluates the expression while ensuring correct operator precedence and error handling for invalid inputs. The user interface features buttons for digits and operators, allowing for a straightforward interaction.
 
@@ -40,4 +43,23 @@ The basic calculator is designed to perform arithmetic operations such as additi
 
 ### Demo
 [![Basic Calculator Demo](https://img.youtube.com/vi/3Sm66-Ruk4w/0.jpg)](https://www.youtube.com/watch?v=3Sm66-Ruk4w)
-## Timer
+
+## Project 2 :Timer
+![Static Badge](https://img.shields.io/badge/planning-working-red)
+### Design Idea
+
+### Function
+
+### Parameters
+
+### Demo
+
+## Project 3 : Personal To-Do list with Calender, memo
+![Static Badge](https://img.shields.io/badge/planning-working-red)
+### Design Idea
+
+### Function
+
+### Parameters
+
+### Demo
