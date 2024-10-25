@@ -42,7 +42,7 @@ The basic calculator is designed to perform arithmetic operations such as additi
    - Output: `"Invalid expression: Expected a number after operator at position 2"`
 
 ### Demo
-[![Basic Calculator Demo](https://img.youtube.com/vi/3Sm66-Ruk4w/0.jpg)](https://www.youtube.com/watch?v=3Sm66-Ruk4w)
+![Example video of BasicCalculator](/assets/Demo_calculator.gif)
 
 ## Project 2 :Timer
 ![Static Badge](https://img.shields.io/badge/planning-working-red)
@@ -63,3 +63,10 @@ The basic calculator is designed to perform arithmetic operations such as additi
 ### Parameters
 
 ### Demo
+
+
+---
+## Try Project : Personal To-Do list with Calender, memo
+![Static Badge](https://img.shields.io/badge/Qt%20Version-QT6-green)
+### Demo
+![Example video of TextFinder](/assets/Demo_textFinder.gif)
