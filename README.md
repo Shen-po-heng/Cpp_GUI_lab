@@ -67,7 +67,7 @@ The basic calculator is designed to perform arithmetic operations such as additi
 
 ---
 ## Try Project : TextFinder
-![Static Badge](https://img.shields.io/badge/Qt%20Version-QT6-green)
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen) 
 
 This is just a source code from [QT getStarted tutorial](https://doc.qt.io/qtcreator/creator-writing-program.html). 
 (I just wanted to give it a try, and also shared here for lazy humans like me.)
