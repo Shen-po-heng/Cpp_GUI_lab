@@ -66,7 +66,9 @@ The basic calculator is designed to perform arithmetic operations such as additi
 
 
 ---
-## Try Project : Personal To-Do list with Calender, memo
+## Try Project : TextFinder
 ![Static Badge](https://img.shields.io/badge/Qt%20Version-QT6-green)
+This is just a source code from QT getStarted tutorial. 
+(I just wanted to give it a try, and also share here for lazy humans like me.)
 ### Demo
 ![Example video of TextFinder](/assets/Demo_textFinder.gif)
