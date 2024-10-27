@@ -1,0 +1,15 @@
+# ninja log v6
+9	1092	7517471161055579	QT_BasicCalculator_autogen/timestamp	b77f10bf29494c3
+9	1092	7517471161055579	QT_BasicCalculator_autogen/mocs_compilation.cpp	b77f10bf29494c3
+9	1092	7517471161055579	C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/QT_BasicCalculator_autogen/timestamp	b77f10bf29494c3
+9	1092	7517471161055579	C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/QT_BasicCalculator_autogen/mocs_compilation.cpp	b77f10bf29494c3
+22	1193	7517471161993658	test_calculation_Function_autogen/timestamp	85bc4cfb3e3bc7ba
+22	1193	7517471161993658	test_calculation_Function_autogen/mocs_compilation.cpp	85bc4cfb3e3bc7ba
+22	1193	7517471161993658	C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/test_calculation_Function_autogen/timestamp	85bc4cfb3e3bc7ba
+22	1193	7517471161993658	C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/test_calculation_Function_autogen/mocs_compilation.cpp	85bc4cfb3e3bc7ba
+1197	1387	7517471163421693	CMakeFiles/test_calculation_Function.dir/test_calculation_Function_autogen/mocs_compilation.cpp.obj	21ded861c853f8e9
+1152	1808	7517471163030537	CMakeFiles/QT_BasicCalculator.dir/calculation_Function.cpp.obj	dc580614e34b3b3b
+1099	3345	7517471162306527	CMakeFiles/QT_BasicCalculator.dir/QT_BasicCalculator_autogen/mocs_compilation.cpp.obj	5c96483d3cc8f10
+1117	3381	7517471162627661	CMakeFiles/QT_BasicCalculator.dir/main.cpp.obj	133e16bd8dd044d
+1134	3766	7517471162806732	CMakeFiles/QT_BasicCalculator.dir/mainwindow.cpp.obj	555c370318e070e
+1217	4010	7517471163631462	CMakeFiles/test_calculation_Function.dir/test_calculation_Function.cpp.obj	74355f70e4bbe7f3

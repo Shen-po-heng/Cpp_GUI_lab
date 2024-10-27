@@ -1,0 +1,13 @@
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/QT_BasicCalculator.dir
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/test_calculation_Function.dir
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/test.dir
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/edit_cache.dir
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/rebuild_cache.dir
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/list_install_components.dir
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/install.dir
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/install/local.dir
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/install/strip.dir
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/QT_BasicCalculator_autogen_timestamp_deps.dir
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/QT_BasicCalculator_autogen.dir
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/test_calculation_Function_autogen_timestamp_deps.dir
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_BasicCalculator/build/CMakeFiles/test_calculation_Function_autogen.dir

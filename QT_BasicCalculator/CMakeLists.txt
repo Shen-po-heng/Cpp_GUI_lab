@@ -11,33 +11,29 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Test)
 
+# Source files for the main application
 set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
+    main.cpp
+    mainwindow.cpp
+    mainwindow.h
+    mainwindow.ui
+    calculation_Function.h
+    calculation_Function.cpp
 )
 
+# Main application executable
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(QT_BasicCalculator
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        calculation_Function.h
-        calculation_Function.cpp
-
     )
-# Define target properties for Android with Qt 6 as:
-#    set_property(TARGET QT_BasicCalculator APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
-# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
         add_library(QT_BasicCalculator SHARED
             ${PROJECT_SOURCES}
         )
-# Define properties for Android with Qt 5 after find_package() calls as:
-#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
         add_executable(QT_BasicCalculator
             ${PROJECT_SOURCES}
@@ -47,12 +43,11 @@ endif()
 
 target_link_libraries(QT_BasicCalculator PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
-# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
-# If you are developing for iOS or macOS you should consider setting an
-# explicit, fixed bundle identifier manually though.
+# Set properties for the main application
 if(${QT_VERSION} VERSION_LESS 6.1.0)
-  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.QT_BasicCalculator)
+    set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.QT_BasicCalculator)
 endif()
+
 set_target_properties(QT_BasicCalculator PROPERTIES
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
@@ -71,3 +66,21 @@ install(TARGETS QT_BasicCalculator
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(QT_BasicCalculator)
 endif()
+
+# Test executable definition
+qt_add_executable(QT_BasicCalculatorTest
+    test_calculation_Function.cpp
+    calculation_Function.cpp
+)
+
+# Link test libraries
+target_link_libraries(QT_BasicCalculatorTest PRIVATE Qt${QT_VERSION_MAJOR}::Test)
+
+# Ensure the test executable uses the same settings
+set_target_properties(QT_BasicCalculatorTest PROPERTIES
+    MACOSX_BUNDLE FALSE
+    WIN32_EXECUTABLE TRUE
+)
+
+# Include directories for tests (if needed)
+target_include_directories(QT_BasicCalculatorTest PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
