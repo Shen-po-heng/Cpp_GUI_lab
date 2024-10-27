@@ -4,7 +4,7 @@
 This repository is to practice GUI implementation of c++, so maybe each folder is not a big project, just a small scale project for practice. If you think it's helpful for you, you can just download them and welcome to leave any comments to suggest (or criticize) or ask me questions. I will answer you when I am available. 
 
 ## Project 1 : Basic Calculator
-![Static Badge](https://img.shields.io/badge/build-passing-brightgreen) 
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen) &nbsp;&nbsp; ![Static Badge](https://img.shields.io/badge/test-passing-brightgreen) 
 ### Design Idea
 The basic calculator is designed to perform arithmetic operations such as addition, subtraction, multiplication, and division, as well as advanced mathematical functions like square roots and factorials. It takes user input in a simple string format and evaluates the expression while ensuring correct operator precedence and error handling for invalid inputs. The user interface features buttons for digits and operators, allowing for a straightforward interaction.
 
