@@ -43,6 +43,7 @@ The basic calculator is designed to perform arithmetic operations such as additi
 
 ### Demo
 ![Example video of BasicCalculator](/assets/Demo_calculator.gif)
+![Test of BasicCalculator](/assets/Test_calculator.jpg)
 
 ## Project 2 :Timer
 ![Static Badge](https://img.shields.io/badge/planning-working-red)
