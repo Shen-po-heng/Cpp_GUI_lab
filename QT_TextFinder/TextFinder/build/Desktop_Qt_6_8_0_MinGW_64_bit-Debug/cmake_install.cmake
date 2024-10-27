@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_TextFinder/TextFinder
+# Install script for directory: C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_TextFinder
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

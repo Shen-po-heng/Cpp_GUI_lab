@@ -344,7 +344,7 @@ TextFinder_BINARY_DIR:STATIC=C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp
 TextFinder_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-TextFinder_SOURCE_DIR:STATIC=C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_TextFinder/TextFinder
+TextFinder_SOURCE_DIR:STATIC=C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_TextFinder
 
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-NOTFOUND
@@ -430,7 +430,7 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_TextFinder/TextFinder
+CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_TextFinder
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR

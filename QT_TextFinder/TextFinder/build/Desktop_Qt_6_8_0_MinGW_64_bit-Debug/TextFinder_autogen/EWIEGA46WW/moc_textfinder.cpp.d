@@ -1,4 +1,4 @@
-C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_TextFinder/TextFinder/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/TextFinder_autogen/EWIEGA46WW/moc_textfinder.cpp: C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_TextFinder/TextFinder/textfinder.h \
+C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_TextFinder/TextFinder/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/TextFinder_autogen/EWIEGA46WW/moc_textfinder.cpp: C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_TextFinder/textfinder.h \
   C:/Users/shenpaul/Documents/MyGithub/QT_GUI_lab/Cpp_GUI_lab/QT_TextFinder/TextFinder/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/TextFinder_autogen/moc_predefs.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
